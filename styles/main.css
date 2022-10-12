@@ -195,7 +195,7 @@ position: relative;
     transform: translateX(-50%);
 }
 .cards>div::before{
-    background-position: -505px -0;
+    background-position: -505px 20px;
 
 }
 .cards>div+div::before{
@@ -220,6 +220,7 @@ color: #5F5F5F;
 .connection .wrapper{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 295px;
 }
 .connection h2{
     font-weight: 700;
@@ -361,4 +362,56 @@ cursor: pointer;
     transform: translateY(-50%);
     background-position: -550px -138px;
     
+}
+/* adaptive */
+.icon_group{
+    position: relative;
+    width: 208px;
+    height: 56px;
+    background: url('../img/tablet.svg') no-repeat 50%;
+    margin-bottom: 16px;
+}
+.icon_group::before{
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    right: 0;
+    top: 0;
+    background: url('../img/laptop.svg')
+}
+.icon_group::after{
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 0;
+    top: 0;
+    background: url('../img/mobile.svg')
+}
+.adaptive h4{
+    font-weight: 600;
+font-size: 24px;
+line-height: 135.5%;
+letter-spacing: 0.02em;
+color: #202020;
+margin-bottom: 40px;
+}
+.adaptive h3{
+font-weight: 400;
+font-size: 40px;
+line-height: 124.5%;
+letter-spacing: 0.02em;
+color: #202020;
+margin-bottom: 16px;
+}
+.adaptive h3 span{
+color: #FC8AD0;
+    }
+.adaptive h3+p{
+    width: 456px;
+    font-weight: 400;
+font-size: 20px;
+line-height: 130.5%;
+color: #202020;
 }
