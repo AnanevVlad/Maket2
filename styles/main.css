@@ -394,7 +394,7 @@ letter-spacing: 0.02em;
 color: #202020;
 margin-bottom: 40px;
 }
-.adaptive h3{
+.adaptive>.wrapper h3{
 font-weight: 400;
 font-size: 40px;
 line-height: 124.5%;
@@ -402,10 +402,10 @@ letter-spacing: 0.02em;
 color: #202020;
 margin-bottom: 16px;
 }
-.adaptive h3 span{
+.adaptive>.wrapper h3 span{
 color: #FC8AD0;
     }
-.adaptive h3+p{
+.adaptive>.wrapper h3+p{
     width: 456px;
     font-weight: 400;
 font-size: 20px;
