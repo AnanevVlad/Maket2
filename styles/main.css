@@ -361,6 +361,12 @@ cursor: pointer;
     
 }
 /* adaptive */
+.adaptive{
+    margin-bottom: 200px;
+}
+.adaptive>.wrapper{
+    display: flex;
+}
 .icon_group{
     position: relative;
     width: 208px;
@@ -411,4 +417,42 @@ color: #FC8AD0;
 font-size: 20px;
 line-height: 130.5%;
 color: #202020;
+}
+.adaptive_img{
+    position: relative;
+    width: 740px;
+    height: 430px;
+    background: red;
+    background: url('../img/css_sprites.png') -643px -0;
+}
+.adaptive_img::before{
+    position: absolute;
+    content: '';
+    width: 168px;
+    height: 340px;
+    right:-10%;
+    top: 50%;
+    background: url('../img/iphone.png');
+}
+.adaptive_img_dis {
+    position: relative;
+    text-align: center;
+    width: 190px;
+    height: 75px;
+ left: 10%;
+ top: 95%;
+}
+.adaptive_img_dis p{
+    position: relative;
+  z-index: 5;
+}
+.adaptive_img_dis::before{
+   content: '';
+   position: absolute;
+   width: 366px;
+   height: 333px;
+background: url('../img/star.png') no-repeat 50%;
+right:50%;
+bottom: 50%;
+transform: translateX(50%) translateY(50%);
 }
